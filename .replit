@@ -1,4 +1,13 @@
-run = "cowsay Configure me!"
+run = ["./main.out"]
+language = "wlang"
+entrypoint = "main.wlg"
+compile = ["bash", "rebuildMain.sh"]
+
+[env]
+wlc = "node /home/runner/WlangBlog/wlang/dist/main.js"
 
 [nix]
 channel = "stable-22_11"
+
+[languages.wlang]
+pattern = "**/*.wlg"

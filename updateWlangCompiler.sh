@@ -15,7 +15,6 @@ git clone https://github.com/DanteFalzone0/wlang.git
 pushd wlang
 npm install
 npm run build
-alias wlc='node /home/runner/WlangBlog/wlang/dist/main.js'
 
 # exit the wlang compiler repo
 popd
